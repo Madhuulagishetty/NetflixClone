@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2023.ico">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-form-container {
+            background-color: black;
+            height: 100vh;
+            /* padding-left: 1.1rem; */
+        }
+
+        .main-form-container-2 {
+            padding-left: 1.1rem;
+        }
+
+        .logo img {
+            height: 80px;
+            width: 80px;
+            cursor: pointer;
+        }
+
+        .main-form-container header {
+            color: white;
+
+            font-size: 2.1rem;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inp1 {
+            background-color: black;
+            /* height: 8vh; */
+            /* width: 90%; */
+            border-color: rgb(203, 200, 200);
+            border-radius: 7px;
+            margin-top: 1.3rem;
+            opacity: 0.9;
+
+        }
+
+        .inp1::placeholder {
+
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.6rem 0.6rem;
+
+
+        }
+
+        .submit {
+            background-color: rgb(229, 9, 20);
+            height: 6vh;
+            width: 90%;
+            border-color: rgb(229, 9, 20);
+            border-radius: 7px;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: white;
+
+
+
+        }
+
+        .forgot-link a {
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+
+            font-weight: 400;
+            margin-top: 0.6rem;
+        }
+
+        .forgot-link {
+            padding-top: 1rem;
+        }
+
+        .forgot-link a:hover {
+            color: red;
+        }
+
+        .checkbox {
+            display: flex;
+
+            font-weight: 400;
+            padding-top: 1rem;
+        }
+
+        .checkbox p {
+            color: white;
+            padding-left: 0.5rem;
+        }
+
+        .checkbox input {
+            background-color: white;
+            width: 17px;
+            height: 20px;
+
+        }
+
+        .checkbox a {
+
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+
+            font-weight: 400;
+            margin-top: 0.6rem;
+
+        }
+
+        .line-hr {
+            height: 4px;
+            width: 100%;
+            background-color: rgba(61, 58, 58, 0.9);
+        }
+
+        @media(min-width:600px) {
+            .main-form-container {
+                /* background-color: black; */
+                background-image: url(netflix.home\ page.image.jpg);
+                height: 100vh;
+                /* padding-left: 1.1rem; */
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: center; */
+                /* flex-direction: column; */
+            }
+            .main-form-container-2{
+                background-color: black;
+                opacity: 0.8;
+                width: 25%;
+                border-radius: 10px;
+                height:65vh;
+                /* display: flex; */
+                /* flex-direction: column; */
+                /* align-items: center; */
+                /* justify-content: center; */
+            }
+            .inp1 {
+            /* background-color: black; */
+            /* height: 8vh; */
+            /* width: 80%; */
+            border-color: rgb(203, 200, 200);
+            border-radius: 7px;
+            margin-top: 1.3rem;
+            opacity: 0.9;
+
+        }
+        .submit {
+            background-color: rgb(229, 9, 20);
+            height: 6vh;
+            width: 80%;
+            border-color: rgb(229, 9, 20);
+            border-radius: 7px;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: white;
+             cursor: pointer;
+
+
+        }
+        
+        .forgot-link a {
+            text-align: center;
+            color: white;
+            font-size: 1rem;
+
+            font-weight: 400;
+            margin-top: 0.9rem;
+        }
+
+        .forgot-link {
+            padding-top: 1.2rem;
+        }
+
+        .forgot-link a:hover {
+            color: red;
+        }
+
+        .checkbox {
+            display: flex;
+
+            font-weight: 400;
+            padding-top: 1.2rem;
+        }
+
+        
+        .checkbox a {
+
+            margin-top: 0.9rem;
+
+        }
+        .main-form-container header {
+            padding-top: 1.6rem;
+            
+        }
+
+
+
+
+
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-form-container">
+        <!-- <h1></h1> -->
+        <!-- <div class="logo">
+            <img src="logo.svg" alt="" srcset="">
+        </div> -->
+        <div class=" main-form-container-2">
+            <!-- <div class="logo">
+                <img src="logo.svg" alt="" srcset="">
+            </div> -->
+            <header>
+                sign in
+
+            </header>
+            <div class="form-container">
+                <form>
+                    <input type="text" name="text" placeholder="e-mail or phone number" class="inp1" required>
+                    <input type="password" name="password" placeholder="password" class="inp1" required>
+                    <input type="submit" name="submit" class="submit">
+                </form>
+                <div class="forgot-link">
+                    <a href="" style="text-align: center;">forgot password ?</a>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="remember me" checked>
+                    <p>remember me</p>
+                </div>
+                <div class="checkbox">
+
+                    <p>new to netflix ? <a href="">sign up now</a></p>
+                </div>
+
+            </div>
+            <!-- <hr> -->
+            <!-- <div class="line-hr">
+
+            </div> -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
